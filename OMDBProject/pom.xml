@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>OMDBProject</groupId>
+	<artifactId>OMDBProject</artifactId>
+	<version>0.0.1</version>
+	<name>OMDBProject</name>
+
+
+
+
+	<repositories>
+		<repository>
+			<id>elasticsearch-releases</id>
+			<url>https://artifacts.elastic.co/maven</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+
+	<dependencies>
+
+		<!-- ODBM Movies Database -->
+		<dependency>
+			<groupId>com.omertron</groupId>
+			<artifactId>API-OMDB</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<!-- POI to operations at excel files -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.17</version>
+		</dependency>
+		<!-- IO JSON to read JSON from url -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20171018</version>
+		</dependency>
+		<!-- Elasticsearch API -->
+		<dependency>
+			<groupId>org.elasticsearch</groupId>
+			<artifactId>elasticsearch</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+		
+	</dependencies>
+
+
+</project>
