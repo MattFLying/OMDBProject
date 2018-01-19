@@ -18,7 +18,12 @@ public class Elastic {
 	
 	private void initialize() {
 		try {
-			this.client = TransportClient.builder().build().addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("localhost"), 9300));
+			this.client = TransportClient.builder().build()
+					.addTransportAddress(
+							new InetSocketTransportAddress(
+									InetAddress.getByName("localhost"), 9300
+							)
+			);
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		}

@@ -32,7 +32,10 @@ public class ElasticController {
 			
 			int counter = 1;
 			for(String json : moviesJSONs) {
-				elastic.createIndexRequest(APIDetails.MOVIE_INDEX.getName(), APIDetails.MOVIE_TYPE.getName(), counter, json);
+				elastic.createIndexRequest(
+						APIDetails.MOVIE_INDEX.getName(), 
+						APIDetails.MOVIE_TYPE.getName(), counter, json
+				);
 				counter++;
 			}
 		}
